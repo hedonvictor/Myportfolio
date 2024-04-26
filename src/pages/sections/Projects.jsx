@@ -1,13 +1,13 @@
 import React from "react";
 
+import Container from 'react-bootstrap/Container';
+import { Row} from 'react-bootstrap';
+import Col from 'react-bootstrap/Col';
+
+
 import YFimg from "../../assets/ProjectsImg/YF.jpg"
 import JWTimg from "../../assets/ProjectsImg/JWT.jpg"
 import Rideimg from "../../assets/ProjectsImg/Ride.webp"
-
-import Container from 'react-bootstrap/Container';
-import { Row } from "react-bootstrap";
-import Col from 'react-bootstrap/Col';
-
 
 export default function Projects() {
     return (
@@ -35,11 +35,19 @@ export default function Projects() {
                                 Programa de gestão financeira e controle de investimentos, com visualização destes dados por meio de graficos, utilizando JavaScript, ReactJs(React-bootstrap, React Router, entre outros).
                             </p>
                         </Col>
-                        <img className="cardProjects" alt="img" src={YFimg} />
+                        <Col>
+                            <a href="https://github.com/hedonvictor/GestaoFinanceira" target="_blank">
+                                <img className="cardProjects" alt="img" src={YFimg} />
+                            </a>
+                        </Col>
                     </Row>
                     <hr />
                     <Row className="align-items-center mb-5">
-                        <img className="cardProjects" alt="img" src={Rideimg} />
+                        <Col>
+                            <a href="https://github.com/hedonvictor/AppRide" target="_blank">
+                                <img className="cardProjects" alt="img" src={Rideimg} />
+                            </a>
+                        </Col>
                         <Col className="ms-3">
                             <h3>
                                 Aplicação de caminhada
