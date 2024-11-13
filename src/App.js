@@ -1,11 +1,9 @@
-import React from "react";
-import Home from "./pages/Home";
+import React from "react"; 
+import RoutesApp from "./routes";
 
 function App() {
   return (
-    <div className="App">
-      <Home/>
-    </div>
+    <RoutesApp/>
   );
 }
 

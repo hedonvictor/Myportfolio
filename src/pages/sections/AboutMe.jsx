@@ -1,100 +1,50 @@
-import { useState } from "react";
-import React from "react";
 
-import JsLogo from "../../assets/carouseltecs/logo-js.png"
-import HtmlLogo from "../../assets/carouseltecs/logo-html.png"
-import CssLogo from "../../assets/carouseltecs/logo-css.png"
-import BootsLogo from "../../assets/carouseltecs/logo-bootstrap.png"
-
-import { Carousel } from 'react-bootstrap';
-import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
+import { Card, Container, Col, Row } from 'react-bootstrap';
+import { CarouselComp } from "../components/CarouselComp";
 
 
 export default function AboutMe() {
-
-    const [index, setIndex] = useState(0);
-
-    const handleSelect = (selectedIndex) => {
-        setIndex(selectedIndex);
-    };
-    const handleNext = () => {
-        if (index === 4) { // Se chegou ao último item (índice 4)
-          setIndex(0); // Reinicia para o primeiro item (índice 0)
-        } else {
-          setIndex(index + 1);
-        }
-      };
-    
-      const handlePrev = () => {
-        if (index === 0) { // Se está no primeiro item
-          setIndex(4); // Vai para o último item (índice 2)
-        } else {
-          setIndex(index - 1);
-        }
-      };
-
     return (
-        <section className="container d-flex justify-content-center align-items-center flex-column">
-            <div class="text-center pt-3">
-                <h1>
-                    Hédon Victor, 21y, Eng. de Software 5/8 🎓
-                </h1>
-                <div className="pt-2 fs-5 fst-italic">
-                    <p>
-                        Ando praticando minhas habilidades majoritariamente em projetos pessoais. Tenho utilizado principalmente JavaScript, ReactJs(react-router-dom e suas funcionalidades, hooks, e etc) e NodeJs, além de utilizar Bootstrap para garantir interfaces elegantes e responsivas. 
-                    </p>
-                    <p>
-                        Um projeto recente é um aplicativo de corrida. Consumindo APIs geolocalização ele registra a distância, local percorrido e demonstra a velocidade durante o trajeto, fazendo também o armazenamento destes dados para visualização do usuário.
-                        Outro em desenvolvimento, um sistema financeiro de consolidação de carteira e investimentos. Permitindo que usuários cadastrem seus investimentos, gerenciem gastos e recebimentos, e tenham uma visão clara de sua saúde financeira.
-                    </p>
-
-
-                </div>
+        <section>
+            <div class="text-center p-3">
+                <span className="doto fs-1">
+                    Hédon Victor, 21y, Eng. de Software 6/8 🎓
+                </span>
             </div>
-            <Carousel
-                slide={false}
-                id="tecsCarousel"
-                className="mt-5"
-                activeIndex={index} onSelect={handleSelect} wrap>
-
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100 carouselLogo p-5"
-                        src={BootsLogo}
-                        alt=""
-                    />
-                </Carousel.Item>
-
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100 carouselLogo"
-                        src={JsLogo}
-                        alt=""
-                    />
-                </Carousel.Item>
-
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100 carouselLogo"
-                        src={HtmlLogo}
-                        alt=""
-                    />
-                </Carousel.Item>
-
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100 carouselLogo"
-                        src={CssLogo}
-                        alt=""
-                    />
-                </Carousel.Item>
-                <button onClick={handlePrev} className="carousel-control-prev" data-bs-target="#tecsCarousel" data-bs-slide="prev">
-                    <BsChevronLeft className="chevron-icon" />
-                </button>
-                <button onClick={handleNext} className="carousel-control-next" data-bs-target="#tecsCarousel" data-bs-slide="next">
-                    <BsChevronRight className="chevron-icon" />
-                </button>
-            </Carousel>
+            <Container>
+                <Row className="justify-content-between align-items-center m-5">
+                    <Col xs={12} md={6} lg={5} className="text-center">
+                        <span className="fs-3 bebas-neue-regular">
+                            Sobre
+                        </span>
+                        <div data-aos="flip-left"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000">
+                            <Card className="cardAbout shadowForCards">
+                                <Card.Body>
+                                    <span className="bebas-neue-regular fs-5">
+                                        Desenvolvedor e graduando no curso de Engenharia de Software.<br />
+                                        Atualmente presto serviços para empresas na área de desenvolvimento principalmente utilizando Js e React, também estagio na área em uma empresa de transportes, prezando sempre pelos princípios de metodologias ágeis. Busco construir uma carreira solida como desenvolvedor, procurando sempre me desafiar, para através disto evoluir como pessoa e profissional.<br />
+                                        Experiências também no desenvolvimento de aplicações mobile com React Native. Projetos back end com NodeJs e c# .net .<br />
+                                        Inglês para conversação e leitura.
+                                    </span>
+                                </Card.Body>
+                            </Card>
+                        </div>
+                    </Col>
+                    <Col xs={12} md={6} lg={5} className="text-center">
+                        <span className="fs-3 bebas-neue-regular">
+                            Hard Skills
+                        </span>
+                        <div className="d-flex justify-content-center" 
+                            data-aos="flip-right"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000">
+                            <CarouselComp />
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
         </section>
     )
 }
