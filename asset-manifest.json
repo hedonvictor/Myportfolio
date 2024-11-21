@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Myportfolio/static/css/main.43254008.css",
-    "main.js": "/Myportfolio/static/js/main.c2cfbec1.js",
+    "main.css": "/Myportfolio/static/css/main.929bdf5e.css",
+    "main.js": "/Myportfolio/static/js/main.76472448.js",
     "static/js/453.8e4349b8.chunk.js": "/Myportfolio/static/js/453.8e4349b8.chunk.js",
     "static/media/DimobiliMoveis.png": "/Myportfolio/static/media/DimobiliMoveis.693a60dc8ff9ad356999.png",
     "static/media/eu.jpg": "/Myportfolio/static/media/eu.260013650bb34d463191.jpg",
@@ -16,12 +16,12 @@
     "static/media/bg-Blue.jpg": "/Myportfolio/static/media/bg-Blue.6c3fbe47e304383dc8db.jpg",
     "static/media/DotNet.jpg": "/Myportfolio/static/media/DotNet.5a460882cd54e4cdafb1.jpg",
     "index.html": "/Myportfolio/index.html",
-    "main.43254008.css.map": "/Myportfolio/static/css/main.43254008.css.map",
-    "main.c2cfbec1.js.map": "/Myportfolio/static/js/main.c2cfbec1.js.map",
+    "main.929bdf5e.css.map": "/Myportfolio/static/css/main.929bdf5e.css.map",
+    "main.76472448.js.map": "/Myportfolio/static/js/main.76472448.js.map",
     "453.8e4349b8.chunk.js.map": "/Myportfolio/static/js/453.8e4349b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.43254008.css",
-    "static/js/main.c2cfbec1.js"
+    "static/css/main.929bdf5e.css",
+    "static/js/main.76472448.js"
   ]
 }
