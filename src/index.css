@@ -1,14 +1,34 @@
 @import url(./styles/fonts.css);
 @import url(./styles/colors.css);
+@import url(./styles/efects.css);
+@import url(./styles/images.css);
+@import url(./styles/queries.css);
 
-html, body { 
-  height: 100%; 
+html, body {
+  height: 100%;
   padding: 0;
   margin: 0;
   font-family: 'open sans', Arial, Helvetica, sans-serif;
   background-color: #1B1E23;
   color: white;
 }
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #1B1E23;
+}
+
+
+footer {
+  color: white;
+  background-color: #0f1524;
+  padding: 2%;
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

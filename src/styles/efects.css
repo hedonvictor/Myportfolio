@@ -1,0 +1,62 @@
+.verticalLine::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    /* Define a altura igual à altura do card */
+    width: 3px;
+    /* Define a largura da borda  */
+    background-color: #3677C7;
+}
+
+.zigzag-left {
+    transform: translateY(-20px);
+}
+
+.zigzag-right {
+    transform: translateY(20px);
+}
+
+.shadowForCards {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.cardProject:hover {
+    transform: scale(1.1);
+    /* Aumenta em 10% */
+    transition: transform 0.4s;
+}
+
+/* Cards */
+
+.presentationCard {
+    background: none;
+    color: white;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+
+.cardAbout {
+    background: none;
+    color: white;
+}
+
+.cardProject {
+    background-color: #3677C7;
+    max-height: 350px;
+    max-width: 500px;
+    border-radius: 15px;
+}
+
+.card-formacao {
+    padding: 20px;
+    border-radius: 30px;
+    max-width: 400px;
+    max-height: 200px;
+    background-color: #2b3469;
+    color: white;
+}

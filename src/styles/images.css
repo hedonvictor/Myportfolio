@@ -1,0 +1,46 @@
+.imgPresentation {
+    max-height: 300px;
+}
+
+.imgProject {
+    width: 100%;
+    /* Garante que a imagem ocupe toda a largura do card */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    max-height: 200px;
+    /* Ajuste conforme necessário */
+    object-fit: cover center;
+    border-radius: 15px 15px 0 0;
+}
+
+.carouselTecImg {
+    max-height: 350px;
+    border-radius: 20px;
+}
+
+/* bg-img */
+
+.projectsSection {
+    background-image:
+        linear-gradient(to bottom, #1B1E23 4%, rgba(27, 30, 35, 0)),
+        linear-gradient(to top, #1B1E23 4%, rgba(27, 30, 35, 0) 40%),
+        url(../assets/bg-Blue.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.presentationContainer {
+    min-height: 480px;
+    background-image:
+        linear-gradient(to bottom, #1B1E23 4%, rgba(27, 30, 35, 0)),
+        linear-gradient(to top, #1B1E23 4%, rgba(27, 30, 35, 0) 40%),
+        url(../assets/bg-teste.jpg);
+    background-size: contain;
+    background-position: center;
+    min-width: 100%;
+}
+
+.HomeDiv{
+    min-height: 100%;
+}

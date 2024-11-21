@@ -1,4 +1,4 @@
-export * from './AboutMe'
-export * from './Formations'
+export {default as AboutMe} from './AboutMe'
+export {default as Formation}  from './Formations'
 export * from './Presentation'
-export * from './Projects'
+export {default as Projects} from './Projects'

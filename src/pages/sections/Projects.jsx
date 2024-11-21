@@ -15,9 +15,9 @@ export default function Projects() {
             <span className="doto fs-1">
                 Conheça alguns de meus trabalhos e projetos
             </span>
-            <Container fluid="md mt-5">
+            <Container fluid="md">
                 <Row className="mt-5 justify-content-around">
-                    <Col xs={12} md={5}
+                    <Col xs={8} md={5}
                         className="mb zigzag-left"
                     >
                         <div data-aos="fade-right">
@@ -35,7 +35,7 @@ export default function Projects() {
                             />
                         </div>
                     </Col>
-                    <Col xs={12} md={5}
+                    <Col xs={8} md={5}
                         className="mb-4 zigzag-right"
                     >
                         <div data-aos="fade-left">
@@ -55,7 +55,6 @@ export default function Projects() {
                     </Col>
                 </Row>
             </Container>
-
         </section>
     )
 }

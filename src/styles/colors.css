@@ -1,5 +1,8 @@
-
-
 .soccialIconsColor {
     color: #3677C7;
+}
+
+a {
+    text-decoration: none;
+    color: #252626;
 }

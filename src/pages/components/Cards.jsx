@@ -1,4 +1,4 @@
-import { Card, CardText, CardTitle, Col } from "react-bootstrap"
+import { Card, CardText, CardTitle } from "react-bootstrap"
 
 
 export const PresentationCard = ({ children }) => {
@@ -31,10 +31,10 @@ export const FormationCard = ({ text }) => {
     return (
         <div data-aos="fade-up">
             <Card className="card-formacao border-0 shadowForCards mb-2">
-                <span class="fs-3 fw-normal">
+                <span className="fs-3 fw-normal">
                     {text.title}
                 </span>
-                <span class="fs-4 fw-normal">
+                <span className="fs-4 fw-normal">
                     {text.desc}
                 </span>
                 <small>

@@ -2,14 +2,12 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import MyHeader from "./components/myHeader";
-import AboutMe from "./sections/AboutMe";
-import Projects from "./sections/Projects";
-import Formation from "./sections/Formations";
+import { AboutMe, Projects, Formation, Presentation} from  './sections'
 
-import "./Home.css"
-import { Presentation } from "./sections/Presentation";
-import { MyFooter } from './components/myFooter';
+
+
+
+import { MyFooter, MyHeader } from './components';
 
 export default function Home() {
     useEffect(() => {
@@ -17,7 +15,7 @@ export default function Home() {
     }, []);
 
     return (
-        <div style={{ height: "100vh" }}>
+        <div className='HomeDiv'>
             <MyHeader/>
             <Presentation/>
             <AboutMe/>

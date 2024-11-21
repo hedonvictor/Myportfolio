@@ -1,0 +1,22 @@
+
+
+/* presentation */
+
+@media (min-width: 1600px) {
+    .presentationContainer {
+      min-height: 690px;
+    }
+  }
+ 
+/* Projects */
+
+@media (max-width: 780px) {
+  .projectsSection {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
